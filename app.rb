@@ -16,7 +16,6 @@ class App < Sinatra::Base
     puppy = Puppy.new(params)
     @name = puppy.name
     @breed = puppy.breed
-    binding.pry
     @months_old = params["age"]
     erb :display_puppy
   end
